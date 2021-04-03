@@ -21,3 +21,9 @@ customer can do  these following functions
 *return order
 *recieve bill
 *pay for the order
+*Get purchasepoints
+*View order status
+*Add money to the wallet
+Based on the purchase points all customers ll be grouped into
+Prime and normal customers
+Prime customer will recieve some discount
