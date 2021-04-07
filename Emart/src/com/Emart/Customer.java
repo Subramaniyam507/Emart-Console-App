@@ -248,27 +248,23 @@ public class Customer {
 	}
     }
 
-    public void addWalletmoney(Customer a) {
+  
+     public int addWalletmoney(int identification) {
     	int cashholder=0;
     	System.out.println("Please enter the money you want to add");
     	cashholder=cst.nextInt();
     	String s="yes";
     	
-    	System.out.println("\nPlease confirm "+
-    	                "\n Type yes to proceed"+
-    	  
-    			           "\n Type no to terminate");
-    	cst.nextLine();
+    	System.out.println("Please confirm ");
+    	System.out.println("\n Type yes to proceed"+
+    	                   "\n Type no to terminate");
     	String check=cst.nextLine();
     	if(check.equalsIgnoreCase(s)) {
-    		a.setCustwallet(cashholder);
+    		return cashholder; 
     	}
     	else {
-    		System.out.println("you have terminated the process");
+    		return 0;
     	}
-    	
-  
-    }
     public void returnOrder(int identification) {
     	System.out.println("enter the itemid");
     	long a=cst.nextLong();
